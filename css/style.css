@@ -120,6 +120,24 @@ img {
     border-color: var(--secondary-color);
 }
 
+/* Navbar Affiliation Logo */
+.nav-logo-link {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.nav-affiliation-logo {
+    height: 30px;
+    width: auto;
+    opacity: 0.85;
+    transition: var(--transition);
+}
+
+.nav-affiliation-logo:hover {
+    opacity: 1;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -223,27 +241,9 @@ img {
     animation-fill-mode: both;
 }
 
-.hero-affiliation-logo {
-    margin: 2rem 0 0.5rem;
-    animation: fadeInUp 1s ease 0.4s;
-    animation-fill-mode: both;
-}
-
-.affiliation-logo {
-    height: 45px;
-    width: auto;
-    opacity: 0.9;
-    transition: var(--transition);
-}
-
-.affiliation-logo:hover {
-    opacity: 1;
-    transform: scale(1.03);
-}
-
 .hero-details {
-    margin: 1rem 0 2rem;
-    animation: fadeInUp 1s ease 0.5s;
+    margin: 2rem 0;
+    animation: fadeInUp 1s ease 0.4s;
     animation-fill-mode: both;
 }
 
@@ -1118,6 +1118,17 @@ img {
     .lang-btn {
         padding: 0.4rem 0.8rem;
         font-size: 0.85rem;
+    }
+
+    .nav-logo-link {
+        position: absolute;
+        top: 1rem;
+        right: 130px;
+        margin-left: 0;
+    }
+
+    .nav-affiliation-logo {
+        height: 24px;
     }
 
     .nav-menu {
