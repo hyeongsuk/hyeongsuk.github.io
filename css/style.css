@@ -128,7 +128,7 @@ img {
 }
 
 .nav-affiliation-logo {
-    height: 30px;
+    height: 38px;
     width: auto;
     opacity: 0.85;
     transition: var(--transition);
@@ -1128,7 +1128,7 @@ img {
     }
 
     .nav-affiliation-logo {
-        height: 24px;
+        height: 28px;
     }
 
     .nav-menu {
