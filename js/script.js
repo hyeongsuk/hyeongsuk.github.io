@@ -239,7 +239,7 @@ pubLinks.forEach(link => {
 // ===================================
 // Console Welcome Message
 // ===================================
-console.log('%c🧠 Dr. Ryu - 뇌공학·시과학·수면의학 연구자', 'font-size: 20px; font-weight: bold; color: #5a6c7d;');
+console.log('%c🧠 HS Lab - Brain Engineering · Vision Science · Sleep Medicine', 'font-size: 20px; font-weight: bold; color: #5a6c7d;');
 console.log('%c웹사이트에 방문해주셔서 감사합니다!', 'font-size: 14px; color: #7f8c8d;');
 console.log('%c컨설팅 문의: hyeongsuk.ryu@gmail.com', 'font-size: 12px; color: #2c3e50;');
 

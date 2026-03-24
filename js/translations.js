@@ -11,8 +11,8 @@ const translations = {
         'nav-contact': '연락',
         
         // Hero Section
-        'hero-title': '뇌공학·시과학·수면의학 전문가',
-        'hero-subtitle': '과학적이고 객관적인 접근으로<br>미래를 향한 연구를 선도합니다',
+        'hero-title': 'HS Lab',
+        'hero-subtitle': 'Brain Engineering · Vision Science · Sleep Medicine',
         'hero-position': '선임연구원 | 공학박사',
         'hero-affiliation': '분당서울대병원',
         'btn-publications': '논문 보기',
@@ -123,12 +123,12 @@ const translations = {
         'form-submit': '메일 보내기',
         
         // Footer
-        'footer-tagline': '뇌공학·시과학·수면의학 전문 연구자',
+        'footer-tagline': 'Brain Engineering · Vision Science · Sleep Medicine',
         'footer-affiliation': '분당서울대병원 선임연구원',
         'footer-quicklinks': 'Quick Links',
         'footer-academic': '학술 프로필',
         'footer-contact': 'Contact',
-        'footer-copyright': '© 2026 Dr. Ryu. All rights reserved.',
+        'footer-copyright': '© 2026 HS Lab. All rights reserved.',
         'footer-updated': 'Last updated: February 2026'
     },
     en: {
@@ -140,8 +140,8 @@ const translations = {
         'nav-contact': 'Contact',
         
         // Hero Section
-        'hero-title': 'Brain Engineering · Vision Science · Sleep Medicine Expert',
-        'hero-subtitle': 'Leading research towards the future<br>with scientific and objective approaches',
+        'hero-title': 'HS Lab',
+        'hero-subtitle': 'Brain Engineering · Vision Science · Sleep Medicine',
         'hero-position': 'Senior Researcher | Ph.D. in Engineering',
         'hero-affiliation': 'Seoul National University Bundang Hospital',
         'btn-publications': 'View Publications',
@@ -252,12 +252,12 @@ const translations = {
         'form-submit': 'Send Email',
         
         // Footer
-        'footer-tagline': 'Brain Engineering · Vision Science · Sleep Medicine Expert',
+        'footer-tagline': 'Brain Engineering · Vision Science · Sleep Medicine',
         'footer-affiliation': 'Senior Researcher, Seoul National University Bundang Hospital',
         'footer-quicklinks': 'Quick Links',
         'footer-academic': 'Academic Profiles',
         'footer-contact': 'Contact',
-        'footer-copyright': '© 2026 Dr. Ryu. All rights reserved.',
+        'footer-copyright': '© 2026 HS Lab. All rights reserved.',
         'footer-updated': 'Last updated: February 2026'
     }
 };
