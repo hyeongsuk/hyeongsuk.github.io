@@ -1121,14 +1121,7 @@ img {
     }
 
     .nav-logo-link {
-        position: absolute;
-        top: 1rem;
-        right: 130px;
-        margin-left: 0;
-    }
-
-    .nav-affiliation-logo {
-        height: 28px;
+        display: none;
     }
 
     .nav-menu {
