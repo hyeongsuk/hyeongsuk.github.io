@@ -223,9 +223,27 @@ img {
     animation-fill-mode: both;
 }
 
-.hero-details {
-    margin: 2rem 0;
+.hero-affiliation-logo {
+    margin: 2rem 0 0.5rem;
     animation: fadeInUp 1s ease 0.4s;
+    animation-fill-mode: both;
+}
+
+.affiliation-logo {
+    height: 45px;
+    width: auto;
+    opacity: 0.9;
+    transition: var(--transition);
+}
+
+.affiliation-logo:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.hero-details {
+    margin: 1rem 0 2rem;
+    animation: fadeInUp 1s ease 0.5s;
     animation-fill-mode: both;
 }
 
