@@ -779,12 +779,14 @@ img {
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 5px 15px var(--shadow);
-    transition: var(--transition);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .consulting-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px var(--shadow-hover);
+    transform: scale(1.08);
+    box-shadow: 0 20px 40px var(--shadow-hover);
+    z-index: 2;
 }
 
 .consulting-icon {
