@@ -22,7 +22,7 @@ const translations = {
         'about-title': 'About Me',
         'about-subtitle': '연구자 소개',
         'about-heading': 'Hyeongsuk Ryu, Ph.D.',
-        'about-description': '고려대학교 뇌인지공학과에서 뇌공학과 시과학을 결합한 연구로 공학박사 학위를 취득하였으며, 임상-공학 융합 연구자입니다. 현재 분당서울대병원 신경과에서 선임연구원으로 근무하고 있습니다.',
+        'about-description': '고려대학교 뇌인지공학과에서 뇌공학과 시과학을 결합한 연구로 공학박사 학위를 취득하였습니다.<br>임상-공학 융합 연구자로서, 분당서울대병원 신경과에서 선임연구원으로 근무하고 있습니다.',
 
         // Expertise (Methodologies & Capabilities)
         'expertise-biosignal-title': 'Biosignal Analysis',
@@ -151,7 +151,7 @@ const translations = {
         'about-title': 'About Me',
         'about-subtitle': 'Researcher Profile',
         'about-heading': 'Hyeongsuk Ryu, Ph.D.',
-        'about-description': 'Received a Ph.D. in Informatics from the Department of Brain and Cognitive Engineering at Korea University, combining brain engineering and vision science. A clinical-engineering convergence researcher, currently working as a Senior Researcher at Seoul National University Bundang Hospital, Department of Neurology.',
+        'about-description': 'Received a Ph.D. from the Department of Brain and Cognitive Engineering at Korea University, combining brain engineering and vision science.<br>As a clinical-engineering convergence researcher, currently serving as a Senior Researcher at Seoul National University Bundang Hospital, Department of Neurology.',
 
         // Expertise (Methodologies & Capabilities)
         'expertise-biosignal-title': 'Biosignal Analysis',
