@@ -604,6 +604,12 @@ img {
     margin-bottom: 1rem;
 }
 
+.co-first {
+    font-size: 0.8rem;
+    color: #888;
+    font-style: italic;
+}
+
 .publication-tags {
     display: flex;
     gap: 0.5rem;
