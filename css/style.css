@@ -784,8 +784,8 @@ img {
 }
 
 .consulting-card:hover {
-    transform: scale(1.08);
-    box-shadow: 0 20px 40px var(--shadow-hover);
+    transform: scale(1.15);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
 
