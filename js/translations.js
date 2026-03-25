@@ -21,22 +21,22 @@ const translations = {
         // About Section
         'about-title': 'About Me',
         'about-subtitle': '연구자 소개',
-        'about-heading': '뇌공학자·시과학자·수면의학 연구자',
-        'about-description': '현재 분당서울대병원에서 선임연구원으로 근무하며, 뇌공학, 시과학, 수면의학 분야의 최첨단 연구를 수행하고 있습니다. 공학박사로서 과학적이고 객관적이며 논리적으로 현상을 바라보는 것을 중요하게 생각합니다.',
-        
-        // Expertise
-        'expertise-brain-title': '뇌공학',
-        'expertise-brain-desc': '뇌 신호 분석 및 뇌-컴퓨터 인터페이스 연구',
-        'expertise-vision-title': '시과학',
-        'expertise-vision-desc': '시각 시스템 및 시각 인지 메커니즘 연구',
-        'expertise-sleep-title': '수면의학',
-        'expertise-sleep-desc': '수면 질환 진단 및 치료 연구',
-        'expertise-rehab-title': '시재활훈련',
-        'expertise-rehab-desc': '시각 장애 재활 및 훈련 프로그램',
-        'expertise-dtx-title': '디지털치료제',
-        'expertise-dtx-desc': '디지털 기반 치료 솔루션 개발',
-        'expertise-ai-title': '의료인공지능',
-        'expertise-ai-desc': '의료 데이터 분석 및 AI 모델 개발',
+        'about-heading': 'Hyeongsuk Ryu, Ph.D.',
+        'about-description': '고려대학교 뇌인지공학과에서 시신경과학과 안과학을 결합한 연구로 공학박사 학위를 취득하였으며, 안경광학 학사 및 안경사 면허를 보유한 임상-공학 융합 연구자입니다. 현재 분당서울대병원 신경과에서 선임연구원으로 근무하고 있습니다.',
+
+        // Expertise (Methodologies & Capabilities)
+        'expertise-biosignal-title': 'Biosignal Analysis',
+        'expertise-biosignal-desc': 'EEG, fMRI 기반 다중 생체신호 분석',
+        'expertise-eyetracking-title': 'Eye Tracking',
+        'expertise-eyetracking-desc': '안구 운동 측정 및 시각 피로 평가',
+        'expertise-ml-title': 'Machine Learning',
+        'expertise-ml-desc': 'AI 기반 진단 모델 및 예측 알고리즘 개발',
+        'expertise-vr-title': 'VR / XR',
+        'expertise-vr-desc': 'VR 기반 시야 검사 및 시기능 평가 플랫폼',
+        'expertise-clinical-title': 'Clinical Research',
+        'expertise-clinical-desc': '디지털 치료제 임상시험 설계 및 분석',
+        'expertise-optics-title': 'Optics & Optometry',
+        'expertise-optics-desc': '광학 설계 및 시기능 임상 검사',
         
         // Research Section
         'research-title': 'Research Areas',
@@ -150,22 +150,22 @@ const translations = {
         // About Section
         'about-title': 'About Me',
         'about-subtitle': 'Researcher Profile',
-        'about-heading': 'Brain Engineer · Vision Scientist · Sleep Medicine Researcher',
-        'about-description': 'Currently working as a Senior Researcher at Seoul National University Bundang Hospital, conducting cutting-edge research in brain engineering, vision science, and sleep medicine. As a Ph.D. in Engineering, I value scientific, objective, and logical approaches to understanding phenomena.',
-        
-        // Expertise
-        'expertise-brain-title': 'Brain Engineering',
-        'expertise-brain-desc': 'Brain signal analysis and brain-computer interface research',
-        'expertise-vision-title': 'Vision Science',
-        'expertise-vision-desc': 'Visual system and visual cognition mechanism research',
-        'expertise-sleep-title': 'Sleep Medicine',
-        'expertise-sleep-desc': 'Sleep disorder diagnosis and treatment research',
-        'expertise-rehab-title': 'Vision Rehabilitation',
-        'expertise-rehab-desc': 'Visual impairment rehabilitation and training programs',
-        'expertise-dtx-title': 'Digital Therapeutics',
-        'expertise-dtx-desc': 'Development of digital-based treatment solutions',
-        'expertise-ai-title': 'Medical AI',
-        'expertise-ai-desc': 'Medical data analysis and AI model development',
+        'about-heading': 'Hyeongsuk Ryu, Ph.D.',
+        'about-description': 'Received a Ph.D. in Informatics from the Department of Brain and Cognitive Engineering at Korea University, combining visual neuroscience and ophthalmology. Holds a B.S. in Optometry and a licensed Korean Optometric Optician. Currently working as a Senior Researcher at Seoul National University Bundang Hospital, Department of Neurology.',
+
+        // Expertise (Methodologies & Capabilities)
+        'expertise-biosignal-title': 'Biosignal Analysis',
+        'expertise-biosignal-desc': 'Multimodal biosignal analysis using EEG and fMRI',
+        'expertise-eyetracking-title': 'Eye Tracking',
+        'expertise-eyetracking-desc': 'Eye movement measurement and visual fatigue assessment',
+        'expertise-ml-title': 'Machine Learning',
+        'expertise-ml-desc': 'AI-driven diagnostic models and prediction algorithms',
+        'expertise-vr-title': 'VR / XR',
+        'expertise-vr-desc': 'VR-based perimetry and visual function assessment',
+        'expertise-clinical-title': 'Clinical Research',
+        'expertise-clinical-desc': 'Digital therapeutics clinical trial design and analysis',
+        'expertise-optics-title': 'Optics & Optometry',
+        'expertise-optics-desc': 'Optical design and clinical visual function examination',
         
         // Research Section
         'research-title': 'Research Areas',
