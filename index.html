@@ -525,26 +525,27 @@
                 <h2 class="section-title" data-lang="lectures-title">Lectures & Interviews</h2>
                 <p class="section-subtitle" data-lang="lectures-subtitle">강연 및 인터뷰</p>
             </div>
-            <div class="book-archive-container">
-                <canvas id="bookCanvas"></canvas>
-                <div id="bookTooltip" class="book-tooltip"></div>
-            </div>
-            <!-- Modal -->
-            <div id="bookModal" class="book-modal-overlay">
-                <div class="book-modal">
-                    <button class="book-modal-close" id="bookModalClose"><i class="fas fa-times"></i></button>
-                    <div class="book-modal-content">
-                        <div class="book-modal-cover" id="modalCover"></div>
-                        <div class="book-modal-info">
-                            <span class="book-modal-badge" id="modalBadge"></span>
-                            <h3 class="book-modal-title" id="modalTitle"></h3>
-                            <p class="book-modal-date" id="modalDate"></p>
-                            <p class="book-modal-desc" id="modalDesc"></p>
-                            <a class="book-modal-link" id="modalLink" href="#" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> <span data-lang="lectures-view-original">원문 보기</span>
-                            </a>
+            <div class="book-split-wrapper" id="bookSplitWrapper">
+                <!-- 3D 캔버스 (초기 전체 뷰) -->
+                <div class="book-archive-container" id="bookArchiveContainer">
+                    <canvas id="bookCanvas"></canvas>
+                    <div id="bookTooltip" class="book-tooltip"></div>
+                </div>
+                <!-- 좌측: 클릭 시 나타나는 세로 리스트 -->
+                <div class="book-list-panel" id="bookListPanel"></div>
+                <!-- 우측: 상세 내용 -->
+                <div class="book-detail-panel" id="bookDetailPanel">
+                    <button class="book-detail-close" id="bookDetailClose"><i class="fas fa-times"></i></button>
+                    <div class="book-detail-header">
+                        <div class="book-detail-cover" id="detailCover"></div>
+                        <div class="book-detail-meta">
+                            <span class="book-detail-badge" id="detailBadge"></span>
+                            <h3 class="book-detail-title" id="detailTitle"></h3>
+                            <p class="book-detail-date" id="detailDate"></p>
                         </div>
                     </div>
+                    <div class="book-detail-body" id="detailBody"></div>
+                    <div class="book-detail-source" id="detailSource"></div>
                 </div>
             </div>
         </div>
