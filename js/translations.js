@@ -13,8 +13,8 @@ const translations = {
         // Hero Section
         'hero-title': 'HS Lab',
         'hero-subtitle': 'Brain Engineering · Vision Science · Sleep Medicine',
+        'nav-slogan': '인간중심시각연구',
         'hero-position1': '연구교수 | 경희대학교',
-        'hero-position2': '선임연구원 | 분당서울대병원',
         'hero-position3': 'Ph.D. | 고려대학교 뇌공학과',
         'btn-publications': '논문 보기',
         'btn-consulting': '컨설팅 문의',
@@ -23,7 +23,7 @@ const translations = {
         'about-title': 'About Me',
         'about-subtitle': '연구자 소개',
         'about-heading': 'Hyeongsuk Ryu, Ph.D.',
-        'about-description': '고려대학교 뇌인지공학과에서 뇌공학과 시과학을 결합한 연구로 공학박사 학위를 취득하였습니다.<br>현재 경희대학교 연구교수 및 분당서울대병원 신경과 선임연구원으로서 임상-공학 융합 연구를 수행하고 있습니다.',
+        'about-description': '고려대학교 뇌인지공학과에서 뇌공학과 시과학을 결합한 연구로 공학박사 학위를 취득하였습니다.<br>현재 경희대학교 연구교수로서 임상-공학 융합 연구를 수행하고 있습니다.',
 
         // Expertise (Methodologies & Capabilities)
         'expertise-biosignal-title': 'Biosignal Analysis',
@@ -112,7 +112,7 @@ const translations = {
         'contact-intro': '컨설팅 문의, 협업 제안, 기타 문의사항이 있으시면 언제든지 연락 주시기 바랍니다.',
         'contact-email-label': '이메일',
         'contact-affiliation-label': '소속',
-        'contact-affiliation-text': '경희대학교 연구교수 · 분당서울대병원 선임연구원',
+        'contact-affiliation-text': '경희대학교 연구교수',
         'contact-response-label': '응답 시간',
         'contact-response-text': '5일 내 회신',
         'contact-profile-heading': '학술 프로필',
@@ -125,8 +125,8 @@ const translations = {
         
         // Footer
         'footer-tagline': 'Brain Engineering · Vision Science · Sleep Medicine',
-        'footer-affiliation': '경희대학교 연구교수 · 분당서울대병원 선임연구원',
-        'footer-affiliation-short': '경희대학교 · 분당서울대병원',
+        'footer-affiliation': '경희대학교 연구교수',
+        'footer-affiliation-short': '경희대학교',
         'footer-quicklinks': 'Quick Links',
         'footer-academic': '학술 프로필',
         'footer-contact': 'Contact',
@@ -144,8 +144,8 @@ const translations = {
         // Hero Section
         'hero-title': 'HS Lab',
         'hero-subtitle': 'Brain Engineering · Vision Science · Sleep Medicine',
+        'nav-slogan': 'Human-Centered Vision Research',
         'hero-position1': 'Research Professor | Kyung Hee University',
-        'hero-position2': 'Senior Researcher | SNUBH',
         'hero-position3': 'Ph.D. | Korea University, Brain Engineering',
         'btn-publications': 'View Publications',
         'btn-consulting': 'Consulting Inquiry',
@@ -154,7 +154,7 @@ const translations = {
         'about-title': 'About Me',
         'about-subtitle': 'Researcher Profile',
         'about-heading': 'Hyeongsuk Ryu, Ph.D.',
-        'about-description': 'Received a Ph.D. from the Department of Brain and Cognitive Engineering at Korea University, combining brain engineering and vision science.<br>Currently serving as Research Professor at Kyung Hee University and Senior Researcher at Seoul National University Bundang Hospital, conducting clinical-engineering convergence research.',
+        'about-description': 'Received a Ph.D. from the Department of Brain and Cognitive Engineering at Korea University, combining brain engineering and vision science.<br>Currently serving as Research Professor at Kyung Hee University, conducting clinical-engineering convergence research.',
 
         // Expertise (Methodologies & Capabilities)
         'expertise-biosignal-title': 'Biosignal Analysis',
@@ -243,7 +243,7 @@ const translations = {
         'contact-intro': 'Please feel free to contact me for consulting inquiries, collaboration proposals, or any other questions.',
         'contact-email-label': 'Email',
         'contact-affiliation-label': 'Affiliation',
-        'contact-affiliation-text': 'Research Professor, Kyung Hee Univ. · Senior Researcher, SNUBH',
+        'contact-affiliation-text': 'Research Professor, Kyung Hee University',
         'contact-response-label': 'Response Time',
         'contact-response-text': 'Reply within 5 days',
         'contact-profile-heading': 'Academic Profiles',
@@ -256,8 +256,8 @@ const translations = {
         
         // Footer
         'footer-tagline': 'Brain Engineering · Vision Science · Sleep Medicine',
-        'footer-affiliation': 'Research Professor, Kyung Hee Univ. · Senior Researcher, SNUBH',
-        'footer-affiliation-short': 'Kyung Hee Univ. · SNUBH',
+        'footer-affiliation': 'Research Professor, Kyung Hee University',
+        'footer-affiliation-short': 'Kyung Hee University',
         'footer-quicklinks': 'Quick Links',
         'footer-academic': 'Academic Profiles',
         'footer-contact': 'Contact',
