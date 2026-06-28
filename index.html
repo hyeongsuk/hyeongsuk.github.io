@@ -15,6 +15,9 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -32,6 +35,7 @@
                 <li><a href="#about" class="nav-link" data-lang="nav-about">소개</a></li>
                 <li><a href="#research" class="nav-link" data-lang="nav-research">연구 분야</a></li>
                 <li><a href="#publications" class="nav-link" data-lang="nav-publications">논문</a></li>
+                <li><a href="#lectures" class="nav-link" data-lang="nav-lectures">강연</a></li>
                 <li><a href="#consulting" class="nav-link" data-lang="nav-consulting">컨설팅</a></li>
                 <li><a href="#contact" class="nav-link" data-lang="nav-contact">연락</a></li>
             </ul>
@@ -514,6 +518,38 @@
         </div>
     </section>
 
+    <!-- Lectures & Interviews Section -->
+    <section id="lectures" class="section lectures-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-lang="lectures-title">Lectures & Interviews</h2>
+                <p class="section-subtitle" data-lang="lectures-subtitle">강연 및 인터뷰</p>
+            </div>
+            <div class="book-archive-container">
+                <canvas id="bookCanvas"></canvas>
+                <div id="bookTooltip" class="book-tooltip"></div>
+            </div>
+            <!-- Modal -->
+            <div id="bookModal" class="book-modal-overlay">
+                <div class="book-modal">
+                    <button class="book-modal-close" id="bookModalClose"><i class="fas fa-times"></i></button>
+                    <div class="book-modal-content">
+                        <div class="book-modal-cover" id="modalCover"></div>
+                        <div class="book-modal-info">
+                            <span class="book-modal-badge" id="modalBadge"></span>
+                            <h3 class="book-modal-title" id="modalTitle"></h3>
+                            <p class="book-modal-date" id="modalDate"></p>
+                            <p class="book-modal-desc" id="modalDesc"></p>
+                            <a class="book-modal-link" id="modalLink" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> <span data-lang="lectures-view-original">원문 보기</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Consulting Section -->
     <section id="consulting" class="section consulting-section">
         <div class="container">
@@ -738,5 +774,8 @@
     
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
+
+    <!-- 3D Book Archive -->
+    <script src="js/book-archive.js"></script>
 </body>
 </html>

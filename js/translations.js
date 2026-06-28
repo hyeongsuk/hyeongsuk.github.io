@@ -7,6 +7,7 @@ const translations = {
         'nav-about': '소개',
         'nav-research': '연구 분야',
         'nav-publications': '논문',
+        'nav-lectures': '강연',
         'nav-consulting': '컨설팅',
         'nav-contact': '연락',
         
@@ -95,6 +96,11 @@ const translations = {
         'consulting-data-desc': '생체신호 분석, ML/DL 기반<br>데이터처리 및 해석 서비스를<br>제공합니다.',
         'consulting-education-title': '교육 & 강연',
         'consulting-education-desc': '시과학 및 뇌공학 관련 세미나<br>워크샵 및 강의를 진행합니다.',
+        // Lectures & Interviews
+        'lectures-title': 'Lectures & Interviews',
+        'lectures-subtitle': '강연 및 인터뷰',
+        'lectures-view-original': '원문 보기',
+
         'consulting-process-title': '컨설팅 프로세스',
         'process-step1-title': '문의',
         'process-step1-desc': '이메일로 프로젝트 개요 전달',
@@ -138,6 +144,7 @@ const translations = {
         'nav-about': 'About',
         'nav-research': 'Research',
         'nav-publications': 'Publications',
+        'nav-lectures': 'Lectures',
         'nav-consulting': 'Consulting',
         'nav-contact': 'Contact',
         
@@ -226,6 +233,11 @@ const translations = {
         'consulting-data-desc': 'Biosignal analysis, ML/DL-based<br>data processing and interpretation<br>services.',
         'consulting-education-title': 'Education & Lectures',
         'consulting-education-desc': 'Vision science and brain engineering<br>seminars, workshops, and lectures.',
+        // Lectures & Interviews
+        'lectures-title': 'Lectures & Interviews',
+        'lectures-subtitle': 'Lectures & Interviews',
+        'lectures-view-original': 'View Original',
+
         'consulting-process-title': 'Consulting Process',
         'process-step1-title': 'Inquiry',
         'process-step1-desc': 'Send project overview via email',

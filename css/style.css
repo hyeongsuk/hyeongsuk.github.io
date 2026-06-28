@@ -769,6 +769,194 @@ img {
 }
 
 /* ===================================
+   Lectures & Interviews (3D Book Archive)
+   =================================== */
+.lectures-section {
+    background: var(--light-bg);
+}
+
+.book-archive-container {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.book-archive-container:active {
+    cursor: grabbing;
+}
+
+#bookCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.book-tooltip {
+    display: none;
+    position: absolute;
+    background: rgba(44, 62, 80, 0.92);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.book-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+.book-modal-overlay.active {
+    display: flex;
+}
+
+.book-modal {
+    background: #fff;
+    border-radius: 16px;
+    max-width: 560px;
+    width: 90%;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    animation: modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+    from { opacity: 0; transform: translateY(20px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.book-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.book-modal-close:hover {
+    background: var(--light-bg);
+    color: var(--primary-color);
+}
+
+.book-modal-content {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.book-modal-cover {
+    width: 120px;
+    height: 168px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 12px;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.15);
+}
+
+.book-modal-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.6rem;
+}
+
+.book-modal-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+}
+
+.book-modal-date {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+}
+
+.book-modal-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.book-modal-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.book-modal-link:hover {
+    background: var(--secondary-color);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .book-archive-container {
+        height: 380px;
+    }
+    .book-modal-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .book-modal-cover {
+        width: 100px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-archive-container {
+        height: 320px;
+    }
+}
+
+/* ===================================
    Consulting Section
    =================================== */
 .consulting-section {
