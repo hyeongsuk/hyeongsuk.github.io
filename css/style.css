@@ -122,11 +122,10 @@ img {
 
 /* Navbar Slogan */
 .nav-slogan {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--secondary-color);
-    margin-left: 1rem;
-    letter-spacing: 0.05em;
+    font-family: var(--font-secondary);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
     white-space: nowrap;
 }
 
