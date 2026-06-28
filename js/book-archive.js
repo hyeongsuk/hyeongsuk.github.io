@@ -8,55 +8,52 @@
         'SEMINAR':   { strip: '#7c8ea0', badge: '#eef1f5', badgeText: '#4e6070', icon: 'fa-users', label: 'Seminar' }
     };
 
-    // ── Book Data (최신순) ──
+    // ── Book Data (최신순, 실제 언론 보도 기반) ──
     var BOOKS = [
         {
-            title: 'VR 시야검사\n기술의 미래',
-            date: '2025.11',
+            title: '근시교정렌즈\n시각 피로 완화',
+            date: '2024',
             type: 'INTERVIEW',
-            source: '옵틱뉴스',
-            content: 'VR(가상현실) 기반 시야검사 플랫폼은 기존 대면 시야검사의 한계를 극복하기 위해 개발되었습니다.\n\n기존 골드만 또는 험프리 시야검사기는 고가의 장비와 전문 시설이 필요하며, 환자가 직접 병원을 방문해야 하는 제약이 있었습니다. VR 기반 플랫폼은 헤드마운트 디스플레이(HMD)를 활용하여 어디서든 정밀한 시야검사가 가능하도록 설계되었습니다.\n\n본 인터뷰에서는 VR 시야검사의 개발 배경, 기존 검사 대비 임상적 동등성 검증 결과, 그리고 향후 원격 의료(Telemedicine) 환경에서의 활용 가능성에 대해 논의하였습니다.',
-            sourceLabel: '출처: 옵틱뉴스 (2025.11)'
+            source: '한국안경신문',
+            content: '서울아산병원 신경과·고려대학교 뇌공학과 유형석 박사, 경희대학교 주의종 교수, 고려대 Christian Wallraven 교수가 공동 수행한 연구로, 근시교정렌즈가 시각 피로 완화에 큰 영향을 미친다는 결과가 SCI저널 Frontiers in Neuroscience에 게재되었다.\n\n연구진은 fMRI(기능적 자기공명영상)를 이용해 난이도별 시각검색 과제를 수행하는 동안 렌즈 착용 시 시각 피로가 눈에 띄게 감소하는 것을 확인했다. 특히 Cuneus, lingual gyrus, MOG(middle occipital gyrus), declive 등 시각 및 인지 처리 조절에 중요한 뇌 영역이 연관되어 있음을 규명했다.\n\n이번 연구는 기존 근시 억제 연구와 달리 근시 교정렌즈의 시각 피로에 대한 신경학적 메커니즘을 탐색했다는 점에서 의의가 있으며, 근시 환자의 생산성과 삶의 질 향상에 기여할 것으로 기대된다.',
+            sourceLabel: '출처: 한국안경신문 (2024.05.13)',
+            link: 'https://www.opticnews.co.kr/news/articleView.html?idxno=42116'
         },
         {
-            title: '디지털 치료제와\n임상 연구',
-            date: '2025.08',
+            title: '호야 마이오스마트\n근시 억제 렌즈',
+            date: '2022',
             type: 'LECTURE',
-            source: '대한안경사협회',
-            content: '디지털 치료제(Digital Therapeutics, DTx)는 소프트웨어 기반의 치료적 개입을 통해 질병을 예방, 관리, 치료하는 새로운 의료 패러다임입니다.\n\n본 강연에서는 디지털 치료제의 정의와 분류, 국내외 규제 동향, 그리고 임상시험 설계 시 고려해야 할 핵심 요소들을 다루었습니다. 특히 시각 관련 디지털 치료제의 개발 사례를 중심으로, FDA 및 식약처 인허가 과정에서의 임상 근거 구축 전략을 공유하였습니다.\n\n또한 RCT(무작위 대조 시험) 설계에서의 Sham control 구현 방법, 디지털 바이오마커의 활용, 환자 순응도(adherence) 측정 방법론에 대해서도 논의하였습니다.',
-            sourceLabel: '출처: 대한안경사협회 학술대회 강연 (2025.08)'
+            source: '의학신문',
+            content: '한국호야렌즈가 인터컨티넨탈 서울 코엑스에서 마이오스마트(MiYOSMART) 렌즈 론칭 세미나를 개최했다. 마이오스마트는 DIMS(Defocus Incorporated Multiple Segments) 특허 기술을 적용하여 근시 억제율 59%, 안축장 길이 성장 억제율 60% 효과를 보인다.\n\n세미나에서 고려대 뇌공학과 유형석 박사는 한국에서 진행된 행동 연구 결과를 발표했다. 축성 근시 억제를 위한 DIMS 렌즈에 대해 소비자가 느끼는 주관적 피로도를 뇌과학적 방법론으로 평가한 연구 결과를 공개하며, 렌즈 착용이 시각 피로에 미치는 영향을 객관적으로 검증했다.\n\n2년간 마이오스마트를 착용한 참가자의 근시 진행은 꾸준히 줄어들었고, 3년 차에는 일반 안경에서 전환한 참가자의 근시 진행도 현저하게 느려지는 것으로 나타났다.',
+            sourceLabel: '출처: 의학신문 (2022.04.27)',
+            link: 'https://www.bosa.co.kr/news/articleView.html?idxno=2172545'
         },
         {
-            title: '뇌공학 기반\n시기능 평가',
-            date: '2025.05',
-            type: 'SEMINAR',
-            source: '경희대학교',
-            content: '기존 시기능 평가는 주관적 응답에 의존하는 심리물리학적(psychophysical) 방법이 주를 이루었으나, 뇌공학 기술의 발전으로 객관적 평가가 가능해지고 있습니다.\n\n본 세미나에서는 EEG(뇌전도)와 Eye Tracking(안구추적)을 결합한 다중모달 시기능 평가 방법론을 소개하였습니다. VEP(시각유발전위)를 이용한 시력 및 시야의 객관적 측정, 그리고 시선추적 데이터의 실시간 분석을 통한 시각 피로 정량화 기법을 다루었습니다.\n\n임상 적용 사례로서 녹내장 환자의 시야 손실 조기 탐지, VDT 작업자의 시각 피로 모니터링 연구 결과를 공유하였습니다.',
-            sourceLabel: '출처: 경희대학교 안광학과 세미나 (2025.05)'
-        },
-        {
-            title: '안경광학의\n연구 방향',
-            date: '2024.12',
+            title: '비전케어 OTTC\n에티오피아 교육',
+            date: '2018',
             type: 'INTERVIEW',
-            source: '보사뉴스',
-            content: '안경광학(Optometry) 분야는 전통적인 굴절검사와 안경 처방을 넘어, 디지털 헬스케어와 융합하며 새로운 연구 영역을 개척하고 있습니다.\n\n본 인터뷰에서는 안경광학 분야의 연구가 나아가야 할 방향에 대해 논의하였습니다. AI 기반 자동 굴절검사, 스마트 렌즈를 활용한 생체신호 모니터링, VR/AR 기기 사용에 따른 시각 건강 영향 평가 등 미래 핵심 연구 주제를 다루었습니다.\n\n또한 안경사의 임상 연구 역량 강화 필요성과, SCI 논문 작성을 위한 연구 방법론 교육의 중요성에 대해서도 이야기하였습니다.',
-            sourceLabel: '출처: 보사뉴스 (2024.12)'
+            source: '비전케어',
+            content: '\'교육으로 함께 밝은 세상을 봅니다\' — 국제실명구호기구 비전케어 OTTC(Ophthalmic Technician Training Course) 프로그램 담당자 유형석 매니저 인터뷰이다. 당시 고려대 뇌공학과 박사과정·극동대 안경광학과 외래교수로 재직 중이었다.\n\nOTTC는 2015년 에티오피아에서 시작되어 4년째 운영된 안경사 교육 프로그램이다. 인구 1억이 넘는 에티오피아에 안경사 직군 자체가 존재하지 않아, 검안사 처방 후 비전문가에게 안경 제작을 맡겨야 하는 현실을 개선하기 위해 기획되었다.\n\n유형석 매니저는 비전아이캠프 참여 경험에서 "캠프 종료 후 환자를 계속 관리할 수 없다"는 한계를 인식하고, 현지 인력 교육을 통한 근본적 해결이 필요하다고 판단했다. 시력 이상 학생의 절반 이상이 시력교정만으로 치료 가능하다는 에티오피아 연구를 계기로, 안경 조제·가공 기술 교육과 강사 양성(심화과정)을 병행하여 현지 자립 체계 구축에 주력했다.',
+            sourceLabel: '출처: 비전케어 블로그 (2018)',
+            link: 'https://blog.naver.com/visioncare2020/221349653505'
         },
         {
-            title: 'AI 진단 모델\n개발 사례',
-            date: '2024.09',
-            type: 'LECTURE',
-            source: '한국뇌공학회',
-            content: '의료 분야에서 AI 진단 모델의 개발과 임상 적용은 빠르게 확산되고 있으며, 특히 의료영상 분석과 생체신호 해석 분야에서 괄목할 만한 성과를 보이고 있습니다.\n\n본 강연에서는 뇌파(EEG) 기반 수면 단계 자동 분류 모델과 안저 영상(Fundus Image) 기반 녹내장 스크리닝 모델의 개발 과정을 실제 사례로 소개하였습니다.\n\n데이터 수집 및 전처리, 모델 아키텍처 설계, 학습 전략, 그리고 임상 검증(validation) 과정에서의 경험과 교훈을 공유하였습니다. 특히 의료 AI에서의 해석 가능성(Explainability)과 규제 대응 전략에 대해 심도 있게 논의하였습니다.',
-            sourceLabel: '출처: 한국뇌공학회 추계학술대회 강연 (2024.09)'
+            title: 'ARVO 국제\n학술상 수상',
+            date: '2017',
+            type: 'INTERVIEW',
+            source: '데일리안',
+            content: '고려대학교 대학원 뇌공학과 유형석 박사연구생이 안과·시과학 분야 세계 최대 학술단체 ARVO(The Association for Research in Vision and Ophthalmology)에서 International Travel Grant Award를 수상했다.\n\n수상 논문 \'Out of the blue: Effects of blue-filtering lenses on EEG and eye movements during reading\'은 단파장(청색광) 감소가 컴퓨터 독서 시 뇌와 눈에 미치는 영향을 규명한 연구다. 청색광을 감소시킨 렌즈를 통해 문자를 읽을 경우, 뇌가 편안하게 사고하면서도 효율은 유지되며, 동일 시간 내 같은 글자를 반복적으로 더 많이 읽는 현상을 확인했다.\n\n이 연구는 ARVO 위원회에서 선정한 상위 2% Hot Topic으로 선정되었으며, 안경계 최초의 동시 수상·선정 사례로 주목받았다. ARVO는 전 세계 75개국 12,000여 명의 연구자로 구성된 최대 규모의 안과·시과학 학회이다.',
+            sourceLabel: '출처: 데일리안 (2017.06.05)',
+            link: 'https://www.dailian.co.kr/news/view/637850/?sc=naver'
         },
         {
-            title: '수면 의학과\n뇌파 분석',
-            date: '2024.06',
-            type: 'SEMINAR',
-            source: '분당서울대병원',
-            content: '수면 다원검사(Polysomnography, PSG)는 수면 장애 진단의 표준 검사이지만, 방대한 뇌파 데이터의 수작업 분석은 시간과 인력이 많이 소요되는 과정입니다.\n\n본 세미나에서는 딥러닝 기반 수면 단계 자동 분류(Automatic Sleep Staging) 알고리즘의 개발과 임상 적용 가능성에 대해 발표하였습니다. CNN-LSTM 하이브리드 모델을 활용한 수면 단계 분류 성능, AASM 기준과의 일치도(Cohen\'s Kappa), 그리고 임상의의 수작업 판독 결과와의 비교 분석을 다루었습니다.\n\n또한 수면 무호흡증(OSA) 중증도 예측, 렘수면행동장애(RBD) 조기 탐지를 위한 뇌파 바이오마커 발굴 연구에 대해서도 소개하였습니다.',
-            sourceLabel: '출처: 분당서울대병원 신경과 세미나 (2024.06)'
+            title: '월요초대석\n시과학 연구자',
+            date: '2017',
+            type: 'INTERVIEW',
+            source: '한국안경신문',
+            content: '한국안경신문 월요초대석에서 고려대학교 인지시스템연구실 유형석 연구원을 초대해 인터뷰를 진행했다. 할아버지와 아버지가 안경사인 집안에서 자라 자연스럽게 안경사가 되었고, 이후 눈과 뇌를 연결시켜 환자를 돕는 시과학 연구의 길을 걷게 된 배경을 전했다.\n\n유 연구원은 "시력이 \'본다\'에서 끝나면 시력이지만, \'어떻게 보는지\'가 되면 시과학"이라며, 복시 환자의 비수술적 시각 훈련, 황반변성 환자를 위한 뇌공학 기반 연구 등 안경사가 담당할 수 있는 시과학 영역의 가능성을 설명했다.\n\n"외국에 비해 우리나라 안경사분들의 이미지가 너무 저평가되어 있다"며 "안경사 후배들이 좀 더 넓은 분야에 도전하는 데 자극제가 됐으면 한다"고 밝혔다.',
+            sourceLabel: '출처: 한국안경신문 (2017.05.01)',
+            link: 'https://www.opticnews.co.kr/news/articleView.html?idxno=28551'
         }
     ];
 
@@ -505,8 +502,13 @@
         var paragraphs = book.content.split('\n\n');
         bodyEl.innerHTML = paragraphs.map(function(p) { return '<p>' + p + '</p>'; }).join('');
 
-        // Source
-        document.getElementById('detailSource').innerHTML = '<i class="fas fa-quote-left"></i> ' + book.sourceLabel;
+        // Source + Link
+        var sourceHtml = '<i class="fas fa-quote-left"></i> ' + book.sourceLabel;
+        if (book.link) {
+            sourceHtml += ' <a href="' + book.link + '" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-left:8px;color:#5b8c85;font-size:0.85rem;text-decoration:none;border-bottom:1px solid #5b8c85;">' +
+                '<i class="fas fa-external-link-alt"></i> 기사 보기</a>';
+        }
+        document.getElementById('detailSource').innerHTML = sourceHtml;
     }
 
     // ══════════════════════════════════════
