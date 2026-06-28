@@ -224,24 +224,20 @@
     // ══════════════════════════════════════
 
     var bookMeshes = [];
-    var bookW = 1.4, bookH = 2.0, bookD = 0.22;
+    var bookW = 1.5, bookH = 2.1, bookD = 0.25;
     var total = BOOKS.length;
 
     // 배치 파라미터
-    // BOOKS[0]=최신 → 가장 좌측+앞(Z 최고), BOOKS[n]=과거 → 우측+뒤(Z 감소)
-    var BOOK_ANGLE = -0.45;       // 음수: 왼쪽 정면 사선 (좌측 카드가 전면 노출)
-    var BASE_SPACING_X = 1.35;    // 기본 가로 간격 (넓혀서 카드 사이 여백 확보)
-    var SPACING_Z = 0.55;         // Z축 간격 (앞→뒤)
-    var DAMPING = 0.93;           // X 간격 감쇠율 (뒤로 갈수록 좁아짐 → 원근 보정)
+    var BOOK_ANGLE = -0.4;        // Y축 회전 (표지가 카메라 쪽을 향하도록)
+    var BASE_SPACING_X = 2.0;     // 기본 가로 간격
+    var SPACING_Z = 0.5;          // Z축 간격 (앞→뒤)
+    var DAMPING = 0.93;           // X 간격 감쇠율
 
-    // 좌측에서 우측으로: i=0(최신)이 가장 왼쪽
-    // 각 책의 X 오프셋을 감쇠 적용하여 사전 계산
     var xOffsets = [0];
     for (var p = 1; p < total; p++) {
         var dampedStep = BASE_SPACING_X * Math.pow(DAMPING, p - 1);
-        xOffsets.push(xOffsets[p - 1] + dampedStep);  // 오른쪽(플러스)으로 이동
+        xOffsets.push(xOffsets[p - 1] + dampedStep);
     }
-    // 전체 중심 맞추기
     var totalWidth = Math.abs(xOffsets[total - 1]);
     var centerOffset = -totalWidth * 0.5;
 
@@ -250,30 +246,33 @@
         var coverTex = createCoverTexture(book);
         var spineTex = createSpineTexture(book);
 
+        // BoxGeometry(width, height, depth)
+        // ±X faces = height × depth (thin spine/pages edges)
+        // ±Z faces = width × height (large cover/back faces)
+        var geo = new THREE.BoxGeometry(bookW, bookH, bookD);
+
         var materials = [
-            new THREE.MeshStandardMaterial({ color: 0xf5f0e8, roughness: 0.95 }),  // pages right
-            new THREE.MeshStandardMaterial({ map: spineTex, roughness: 0.55 }),     // spine left
-            new THREE.MeshStandardMaterial({ color: 0xf5f0e8, roughness: 0.95 }),  // top
-            new THREE.MeshStandardMaterial({ color: 0xf5f0e8, roughness: 0.95 }),  // bottom
-            new THREE.MeshStandardMaterial({ map: coverTex, roughness: 0.4 }),      // front cover
-            new THREE.MeshStandardMaterial({ color: 0x1f2d3a, roughness: 0.7 })     // back
+            new THREE.MeshStandardMaterial({ color: 0xf5f0e8, roughness: 0.95 }),  // +X pages edge
+            new THREE.MeshStandardMaterial({ map: spineTex, roughness: 0.55 }),     // -X spine edge
+            new THREE.MeshStandardMaterial({ color: 0xf5f0e8, roughness: 0.95 }),  // +Y top
+            new THREE.MeshStandardMaterial({ color: 0xf5f0e8, roughness: 0.95 }),  // -Y bottom
+            new THREE.MeshStandardMaterial({ map: coverTex, roughness: 0.4 }),      // +Z front cover (LARGE)
+            new THREE.MeshStandardMaterial({ color: 0x1f2d3a, roughness: 0.7 })     // -Z back (LARGE)
         ];
 
-        var geo = new THREE.BoxGeometry(bookD, bookH, bookW);
         var mesh = new THREE.Mesh(geo, materials);
 
-        // i=0(최신) → 좌측 앞, i 증가(과거) → 우측 뒤
         var posX = xOffsets[i] + centerOffset;
         var posY = bookH / 2;
-        var posZ = -i * SPACING_Z;  // i=0 가장 앞(Z=0), i 증가 → 뒤로
+        var posZ = -i * SPACING_Z;
 
         mesh.position.set(posX, posY, posZ);
         mesh.rotation.y = BOOK_ANGLE;
         mesh.castShadow = true;
         mesh.receiveShadow = true;
 
-        // 각 카드 하단에 은은한 타원형 그림자
-        var shadowGeo = new THREE.PlaneGeometry(1.6, 0.8);
+        // 각 카드 하단 그림자
+        var shadowGeo = new THREE.PlaneGeometry(1.8, 0.9);
         var shadowMat = new THREE.MeshBasicMaterial({
             color: 0x1a2530,
             transparent: true,
@@ -297,9 +296,9 @@
         bookMeshes.push(mesh);
     }
 
-    // ── Camera (좌측 앞 카드가 잘 보이도록 약간 좌측에서 바라봄) ──
-    camera.position.set(-1.5, 3.2, 8.5);
-    camera.lookAt(-0.3, 0.7, -1.2);
+    // ── Camera ──
+    camera.position.set(-1.0, 3.0, 9.0);
+    camera.lookAt(0, 0.8, -1.0);
 
     // ══════════════════════════════════════
     //  RAYCASTER & HOVER (정면 회전 + 튀어나옴)
@@ -343,9 +342,9 @@
                 // 호버 효과: 정면 회전 + 앞으로 + 위 + 확대 + 그림자 강화
                 var t = targets[idx];
                 t.rotY = 0;                               // 정면 (사선→수평)
-                t.posZ = obj.userData.originalPos.z + 2.0; // 카메라 쪽(+Z)으로 튀어나옴
-                t.posY = obj.userData.originalPos.y + 0.12; // 약간 위로
-                t.scale = 1.1;                             // 확대
+                t.posZ = obj.userData.originalPos.z + 1.5; // 카메라 쪽(+Z)으로 튀어나옴
+                t.posY = obj.userData.originalPos.y + 0.15; // 약간 위로
+                t.scale = 1.08;                            // 확대
                 t.shadowOpacity = 0.22;                    // 그림자 짙어짐
                 t.shadowScale = 1.3;                       // 그림자 확대
             }
@@ -517,10 +516,10 @@
 
     var isDragging = false;
     var prevMouse = { x: 0, y: 0 };
-    var orbitTheta = -0.08;
-    var orbitPhi = 0.35;
-    var orbitRadius = 9;
-    var orbitTarget = new THREE.Vector3(-0.3, 0.7, -1.2);
+    var orbitTheta = -0.06;
+    var orbitPhi = 0.32;
+    var orbitRadius = 9.5;
+    var orbitTarget = new THREE.Vector3(0, 0.8, -1.0);
 
     function setCameraFromOrbit() {
         camera.position.x = orbitTarget.x + orbitRadius * Math.sin(orbitTheta) * Math.cos(orbitPhi);
