@@ -248,7 +248,7 @@
         xOffsets.push(xOffsets[p - 1] + dampedStep);
     }
     var totalWidth = Math.abs(xOffsets[total - 1]);
-    var centerOffset = -totalWidth * 0.5;
+    var centerOffset = -totalWidth * 0.42;
 
     for (var i = 0; i < total; i++) {
         var book = BOOKS[i];
@@ -306,8 +306,8 @@
     }
 
     // ── Camera ──
-    camera.position.set(-1.0, 3.0, 9.0);
-    camera.lookAt(0, 0.8, -1.0);
+    camera.position.set(0.3, 3.0, 9.0);
+    camera.lookAt(0.5, 0.8, -1.0);
 
     // ══════════════════════════════════════
     //  RAYCASTER & HOVER (정면 회전 + 튀어나옴)
@@ -525,10 +525,10 @@
 
     var isDragging = false;
     var prevMouse = { x: 0, y: 0 };
-    var orbitTheta = -0.06;
+    var orbitTheta = 0.02;
     var orbitPhi = 0.32;
     var orbitRadius = 9.5;
-    var orbitTarget = new THREE.Vector3(0, 0.8, -1.0);
+    var orbitTarget = new THREE.Vector3(0.5, 0.8, -1.0);
 
     function setCameraFromOrbit() {
         camera.position.x = orbitTarget.x + orbitRadius * Math.sin(orbitTheta) * Math.cos(orbitPhi);
