@@ -823,7 +823,7 @@ img {
 .book-split-wrapper {
     display: flex;
     gap: 0;
-    height: 500px;
+    height: 580px;
     border-radius: 16px;
     overflow: hidden;
     background: #f7f8fa;
