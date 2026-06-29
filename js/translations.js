@@ -7,7 +7,7 @@ const translations = {
         'nav-about': '소개',
         'nav-research': '연구 분야',
         'nav-publications': '논문',
-        'nav-lectures': '강연',
+        'nav-lectures': '보도 & 강연',
         'nav-consulting': '컨설팅',
         'nav-contact': '연락',
         
@@ -97,8 +97,8 @@ const translations = {
         'consulting-education-title': '교육 & 강연',
         'consulting-education-desc': '시과학 및 뇌공학 관련 세미나<br>워크샵 및 강의를 진행합니다.',
         // Lectures & Interviews
-        'lectures-title': 'Lectures & Interviews',
-        'lectures-subtitle': '강연 및 인터뷰',
+        'lectures-title': 'Press & Talks',
+        'lectures-subtitle': '보도 & 강연',
         'lectures-view-original': '원문 보기',
 
         'consulting-process-title': '컨설팅 프로세스',
@@ -144,7 +144,7 @@ const translations = {
         'nav-about': 'About',
         'nav-research': 'Research',
         'nav-publications': 'Publications',
-        'nav-lectures': 'Lectures',
+        'nav-lectures': 'Press & Talks',
         'nav-consulting': 'Consulting',
         'nav-contact': 'Contact',
         
@@ -234,8 +234,8 @@ const translations = {
         'consulting-education-title': 'Education & Lectures',
         'consulting-education-desc': 'Vision science and brain engineering<br>seminars, workshops, and lectures.',
         // Lectures & Interviews
-        'lectures-title': 'Lectures & Interviews',
-        'lectures-subtitle': 'Lectures & Interviews',
+        'lectures-title': 'Press & Talks',
+        'lectures-subtitle': 'Press & Talks',
         'lectures-view-original': 'View Original',
 
         'consulting-process-title': 'Consulting Process',
