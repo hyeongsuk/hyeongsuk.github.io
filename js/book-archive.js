@@ -536,23 +536,20 @@
         document.getElementById('detailTitle').textContent = book.title.replace(/\n/g, ' ');
         document.getElementById('detailDate').innerHTML = '<i class="fas fa-calendar-alt"></i> ' + book.date + ' | ' + book.source;
 
-        // Company Logo (우측 상단)
+        // Company Logo (header 우측, 타이틀과 같은 높이)
         var existingLogo = document.getElementById('detailCompanyLogo');
         if (existingLogo) existingLogo.remove();
         if (book.logoImg) {
             var logoEl = document.createElement('div');
             logoEl.id = 'detailCompanyLogo';
-            logoEl.style.cssText = 'position:absolute;top:12px;right:12px;max-width:140px;max-height:48px;opacity:0.7;z-index:2;';
+            logoEl.style.cssText = 'flex-shrink:0;display:flex;align-items:center;margin-left:auto;padding-top:1.4rem;';
             var logoImgEl = document.createElement('img');
             logoImgEl.src = book.logoImg;
             logoImgEl.alt = book.logo;
-            logoImgEl.style.cssText = 'max-width:100%;max-height:48px;object-fit:contain;filter:grayscale(30%);';
+            logoImgEl.style.cssText = 'max-width:110px;max-height:32px;object-fit:contain;opacity:0.5;filter:grayscale(40%);';
             logoEl.appendChild(logoImgEl);
-            var detailPanel = document.getElementById('bookDetailPanel');
-            if (detailPanel) {
-                detailPanel.style.position = 'relative';
-                detailPanel.appendChild(logoEl);
-            }
+            var headerEl = document.querySelector('.book-detail-header');
+            if (headerEl) headerEl.appendChild(logoEl);
         }
 
         // Body
